@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Atkinson Hyperlegible Next";
+    src: url(fonts/Atkinson_Hyperlegible_Next/AtkinsonHyperlegibleNextVF-Variable.ttf) format('TrueType') tech(variations);
+    font-weight: 200 800;
+}
+
+@font-face {
+    font-family: "Fast Sans";
+    src: url(fonts/Fast/Sans/Fast_Sans_Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fast Sans";
+    src: url(fonts/Fast/Sans/Fast_Sans_Italic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fast Sans";
+    src: url(fonts/Fast/Sans/Fast_Sans_Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fast Sans";
+    src: url(fonts/Fast/Sans/Fast_Sans_BoldItalic.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fast Serif";
+    src: url(fonts/Fast/Serif/Fast_Serif_Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fast Serif";
+    src: url(fonts/Fast/Serif/Fast_Serif_Italic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fast Serif";
+    src: url(fonts/Fast/Serif/Fast_Serif_Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fast Serif";
+    src: url(fonts/Fast/Serif/Fast_Serif_BoldItalic.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url(fonts/Lexend/Lexend-VariableFont_wght.woff2) format(woff2) tech(variations);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2) format(woff2) tech(variations);
+    font-weight: 300 800;
+    font-stretch: 75% 100%;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2) format(woff2) tech(variations);
+    font-weight: 300 800;
+    font-stretch: 75% 100%;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Focus Sans";
+    src: url(fonts/Focus_Sans/FocusSans_Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Focus Sans Focus";
+    src: url(fonts/Focus_Sans/FocusSans_FocusRegular.woff2) format(woff2);
+}

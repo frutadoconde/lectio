@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@3.0.1/modern-normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Lectio</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lectio</h1>
+        <hr>
+        <div id="fontPicker">
+            <span id="pickerIcon" class="material-icons md-36">
+                font_download
+            </span>
+            <div class="select">
+                <select id="fontMenu" name="font">
+                    <option value="Reset">Original fonts</option>
+                    <option value="Atkinson Hyperlegible Next">Atkinson Hyperlegible Next</option>
+                    <option value="Fast Sans">Fast Sans</option>
+                    <option value="Fast Serif">Fast Serif</option>
+                    <option value="Focus Sans">Focus Sans</option>
+                    <option value="Focus Sans Focus">Focus Sans - Alternate</option>
+                    <option value="Lexend">Lexend</option>
+                    <option value="Open Sans">Open Sans</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div id="weight">
+            <span id="weightIcon" class="material-icons md-36">
+                line_weight
+            </span>
+            <form>
+                <div id="weightMenu">
+                    <input type="radio" id="bold" name="fontWeight" value="bold">
+                    <label for="bold">Bold</label><br>
+                    <input type="radio" id="normal" name="fontWeight" value="normal" checked>
+                    <label for="normal">Normal</label><br>
+                    <input type="radio" id="light" name="fontWeight" value="light">
+                    <label for="light">Light</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="jquery-4.0.0.slim.min.js"></script>
+<script src="popup.js"></script>
+
+</html>
