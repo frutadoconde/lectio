@@ -3,9 +3,9 @@
     "{lectio@frutadoconde.com}": {
       "updates": [
         {
-          "version": "0.1",
-          "update_link": "https://github.com/frutadoconde/lectio/tree/main/web-ext-artifacts/lectio-1.0.zip",
-          "update_hash": "sha256:e3fc834d2b2b338faa0cf2a1b8388b063e2f1ec5a1e70e6dbd1aa19690366966"
+          "version": "1.0",
+          "update_link": "https://github.com/frutadoconde/lectio/releases/download/1.0/lectio-1.0.zip",
+          "update_hash": "sha256:d139261cf5ca3dc3933fed58b1c5a4685a246855d53544de6bbcb98fdd384f8a"
         }
       ]
     }
