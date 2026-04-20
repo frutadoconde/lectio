@@ -17,6 +17,7 @@
     "browser_specific_settings": {
         "gecko": {
             "id": "lectio@frutadoconde.com",
+            "update_url": "https://github.com/frutadoconde/lectio/blob/main/updates.json",
             "data_collection_permissions": {
                 "required": ["none"]
             }
