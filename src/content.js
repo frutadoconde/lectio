@@ -106,6 +106,9 @@ browser.runtime.onMessage.addListener((message) => {
     else if (message.action === "changeWeight") {
         weightChangeHandler();
     }
+    else if (message.action === "changeSlant") {
+        slantChangeHandler();
+    }
     else if (message.action === "clearStyle") {
         clearStyle();
     }
@@ -137,19 +140,19 @@ async function weightChangeHandler() {
     }
 }
 
-function changeWeight(weightSelection) {
-    if ($("lectio").lenght) {
-        $("#lectio").find("*").css("font-weight", weightSelection);
+async function slantChangeHandler() {
+    let result = await browser.storage.local.get("currentSlantSelection");
+    try {
+        let slantSelection = result.currentSlantSelection || false;
+        if (slantSelection) {
+            changeSlant(slantSelection);
+        }
     }
-    else {
-        let placeholderStyle = `
-        * {
-            font-weight: ${weightSelection};
-        } `
-        const placeholderStyleElement = $('<style>', { id: "lectio" }).html(placeholderStyle);
-        $('head').append(placeholderStyleElement);
+    catch (error) {
+        console.warn(`Error: ${error.message}`);
     }
 }
+
 
 function changeFont(fontSelection) {
     $('#lectio').remove();
@@ -158,17 +161,31 @@ function changeFont(fontSelection) {
         return;
     }
     else {
-        const changeStyleLiteral = `
-        * { 
-            font-family: ${fontSelection}, sans-serif !important; 
-        } `
-        const changeStyleElement = $('<style>', { id: "lectio" }).html(changeStyleLiteral);
-        $('head').append(changeStyleElement);
+        let styleLiteral = `* { font-family: ${fontSelection}, sans-serif !important; } `
+        const el = $('<style>', { id: "lectio" }).html(styleLiteral);
+        $('head').append(el);
     }
 }
 
+function changeWeight(weightSelection) {
+    $('#lectio-weight').remove();
+    let styleLiteral = `* { font-weight: ${weightSelection}; }`;
+    const el = $('<style>', { id: "lectio-weight" }).html(styleLiteral);
+    $('head').append(el);
+}
+
+function changeSlant(slantSelection) {
+    $('#lectio-slant').remove();
+    let styleLiteral = `* { font-style: ${slantSelection}; }`;
+    const el = $('<style>', { id: "lectio-slant" }).html(styleLiteral);
+    $('head').append(el);
+}
+
 function clearStyle() {
-  $('#lectio').remove();
-  browser.storage.local.remove("currentFontSelection"); 
-  browser.storage.local.remove("currentWeightSelection"); 
+    $('#lectio').remove();
+    $('#lectio-weight').remove();
+    $('#lectio-slant').remove();
+    browser.storage.local.remove("currentFontSelection");
+    browser.storage.local.remove("currentWeightSelection");
+    browser.storage.local.remove("currentSlantSelection");
 }

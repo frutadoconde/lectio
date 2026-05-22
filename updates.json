@@ -6,6 +6,11 @@
           "version": "1.0",
           "update_link": "https://github.com/frutadoconde/lectio/releases/download/1.0/lectio-1.0.zip",
           "update_hash": "sha256:d139261cf5ca3dc3933fed58b1c5a4685a246855d53544de6bbcb98fdd384f8a"
+        },
+        {
+          "version": "2.0",
+          "update_link": "https://github.com/frutadoconde/lectio/releases/download/2.0/lectio-2.0.zip",
+          "update_hash": "sha256:b26e4cda1c31e86b9c739c32e55140cf248e3687cb8b4c265aa99d8a57eae765"
         }
       ]
     }

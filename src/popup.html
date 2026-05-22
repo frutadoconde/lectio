@@ -15,7 +15,7 @@
         <h1>Lectio</h1>
         <hr>
         <div id="fontPicker">
-            <span id="pickerIcon" class="material-icons md-36">
+            <span class="material-icons md-36">
                 font_download
             </span>
             <div class="select">
@@ -31,23 +31,40 @@
                 </select>
             </div>
         </div>
-        <hr>
-        <div id="weight">
-            <span id="weightIcon" class="material-icons md-36">
-                line_weight
-            </span>
-            <form>
-                <div id="weightMenu">
-                    <input type="radio" id="bold" name="fontWeight" value="bold">
-                    <label for="bold">Bold</label><br>
-                    <input type="radio" id="normal" name="fontWeight" value="normal" checked>
-                    <label for="normal">Normal</label><br>
-                    <input type="radio" id="light" name="fontWeight" value="light">
-                    <label for="light">Light</label>
-                </div>
-            </form>
+        <div class="fontStyling">
+            <div id="weightDiv">
+                <span class="material-icons md-36">
+                    line_weight
+                </span>
+                <form>
+                    <div id="weightMenu">
+                        <input type="radio" id="bold" name="fontWeight" value="bold">
+                        <label for="bold">Bold</label><br>
+                        <input type="radio" id="normal" name="fontWeight" value="normal" checked>
+                        <label for="normal">Normal</label><br>
+                        <input type="radio" id="light" name="fontWeight" value="light">
+                        <label for="light">Light</label>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div id="slantDiv">
+                <span class="material-icons md-36">
+                    format_italic
+                </span>
+                <form>
+                    <div id="slantMenu">
+                        <input type="radio" id="normalSlant" name="fontSlant" value="normal" checked>
+                        <label for="normal">Normal</label><br>
+                        <input type="radio" id="italic" name="fontSlant" value="italic">
+                        <label for="italic">Italic</label>
+                    </div>
+                </form>
+            </div>
         </div>
+        <button id="clearButton"><span class="material-icons md-24">format_clear</span></button>
     </div>
+
 </body>
 <script src="jquery-4.0.0.slim.min.js"></script>
 <script src="popup.js"></script>
